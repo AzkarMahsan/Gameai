@@ -33,6 +33,7 @@ Below are the main components used in this football game that I will discuss:
 Plane:
 
 Plane is basically a 3D object of Unity3d on which I mapped a texture of football ground. This describes the structure of football game. The edges of ground are covered by an invisible sidewall. The purpose of the sidewall is to restrict the ball and players to the boundaries of the ground. If the ball hits or collides with any sidewall then the game object will reset back to their original positions. This is the function that will help us to do this:
+
     void OnCollisionEnter (Collision collision)
     { 
         if ((collision .collider .tag == "Ball")
@@ -141,6 +142,7 @@ Secs .text = Mathf .Floor( Timer % 60) .ToString("00");
 mint = Mathf .Floor (Timer / 60);
 sec = Mathf .Floor (Timer % 60);
 if ( Timer <= 1)
+
 { 
 GameManager .Instance .StopGame();
 }
@@ -156,6 +158,7 @@ The exit button is used to close the game, when we click on the exit button the 
     {
         Application .Quit();
     }
+    
 Sound on\off is used for the background sound. Background sound is only limited for the main menu window. Initially sound will be turned OFF. But when the user clicks on the sound ON button then the sound will start playing. If the user wants to turn the sound OFF then all he/she simply does is click on sound OFF button. Below is a line of code that is used to implement this functionality:
 
     public void Sound()
@@ -176,6 +179,7 @@ Sound on\off is used for the background sound. Background sound is only limited 
         }
 
     }
+    
 Another button that is available on the main menu is the play button. The Play button is used to start the game. When we click on the play button the game will start. Below is a line of code that is used to implement this functionality:
 
     public void Play()
@@ -198,6 +202,7 @@ Reset the game is the function that will reset the players position after the go
 
         Application.LoadLevel(Application.loadedLevel); 
     }
+    
 The stop game functionality is used to stop the game, below is a line of code that is  used for this purpose:
 
     public void StopGame()
