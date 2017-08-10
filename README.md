@@ -31,6 +31,7 @@ Below are the main components used in this football game that I will discuss:
 •	Game Manager
 
 Plane:
+
 Plane is basically a 3D object of Unity3d on which I mapped a texture of football ground. This describes the structure of football game. The edges of ground are covered by an invisible sidewall. The purpose of the sidewall is to restrict the ball and players to the boundaries of the ground. If the ball hits or collides with any sidewall then the game object will reset back to their original positions. This is the function that will help us to do this:
     void OnCollisionEnter (Collision collision)
     { 
@@ -180,7 +181,9 @@ Another button that is available on the main menu is the play button. The Play b
         Application.LoadLevel(Application.loadedLevel + 1);
 
     }
+    
 Game Manager:
+
 Game manager is the class that is used to manage the game such as start the of the game, reset the game and pause the game, etc.
 
 Reset the game is the function that will reset the players position after the goal has been scored . Below is a line of code that is used for this implementation: 
