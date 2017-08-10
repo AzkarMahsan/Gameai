@@ -15,13 +15,21 @@ No extra libraries have been used in this game, the libraries used in this proje
 
 
 Below are the main components used in this football game that I will discuss:
+
 •	Plane
+
 •	Ball
-•	Goalkeeper 
+
+•	Goalkeeper
+
 •	Player
-•	Time manger
-•	Main menu manger
-•	Game manger
+
+•	Time Manager
+
+•	Main Menu Manager
+
+•	Game Manager
+
 Plane:
 Plane is basically a 3D object of Unity3d on which I mapped a texture of football ground. This describes the structure of football game. The edges of ground are covered by an invisible sidewall. The purpose of the sidewall is to restrict the ball and players to the boundaries of the ground. If the ball hits or collides with any sidewall then the game object will reset back to their original positions. This is the function that will help us to do this:
     void OnCollisionEnter (Collision collision)
