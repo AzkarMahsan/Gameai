@@ -22,7 +22,7 @@ Below are the main components used in this football game that I will discuss:
 
 •	Goalkeeper
 
-•	Player
+•	Outfield player
 
 •	Time Manager
 
