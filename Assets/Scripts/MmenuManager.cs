@@ -50,7 +50,7 @@ public class MmenuManager : MonoBehaviour {
 
     #region Sound
 
-    // in this function we enable are disabling the sound
+    // in this function we enabling and disabling the sound
     public void Sound()
     {
         // we are checking that if the sound on button is active
