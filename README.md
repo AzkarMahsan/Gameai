@@ -6,8 +6,11 @@ When a goal has been scored the position of players, goalkeeper and the position
 No extra libraries have been used in this game, the libraries used in this project are:
 
 •	Using System.Collections ;
+
 •	Using System.Collections.Generic ;
+
 •	Using UnityEngine;
+
 •	Using UnityEngine.UI; 
 
 
