@@ -181,10 +181,10 @@ Reset the game is the function that will reset the players position after the go
         Application.LoadLevel(Application.loadedLevel); 
     }
 The stop game functionality is used to stop the game, below is a line of code that is  used for this purpose:
+
     public void StopGame()
     { 
         Time.timeScale = 0;
-
     }
 
 References are in the MmenuManager.cs script (https://github.com/AzkarMahsan/Gameai/blob/master/Assets/Scripts/MmenuManager.cs)
