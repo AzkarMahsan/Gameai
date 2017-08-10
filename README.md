@@ -93,12 +93,14 @@ The outfield player's objective is also developed by using a 3D cube. The differ
 Simple calculations are used for player activities such as when the player kicks the ball. If the distance between the goal posts is less than 3 then the player position will be in-front of the goal posts. Force will be added on the ball when the ball collides with the rigid body.
  
 if (( Vector3 .Distance ( this .transform .position, points[9] .transform .position ) <= 3 ) || (Vector3 .Distance (this .transform .position, points[10] .transform .position) <= 3 ) || (Vector3 .Distance (this .transform .position, points[11] .transform .position )) <= 3 )
+
         {   
             Kick();
             finalpoint = true;
         } 
 
 void Kick()
+
     {
         Ball .Instance .kicked = true; 
         this .transform .LookAt (GameObject .FindGameObjectWithTag ("Goal Team B") .transform .position);
