@@ -205,7 +205,10 @@ The stop game functionality is used to stop the game, below is a line of code th
         Time.timeScale = 0;
     }
 
-References are in the MmenuManager.cs script (https://github.com/AzkarMahsan/Gameai/blob/master/Assets/Scripts/MmenuManager.cs)
+References are in the MmenuManager.cs script: (https://github.com/AzkarMahsan/Gameai/blob/master/Assets/Scripts/MmenuManager.cs)
+
+Youtube link:
+https://www.youtube.com/watch?v=9Qzo5ZUZ7nQ
 
 
 
